@@ -27,6 +27,6 @@ public class CustomerEntity {
     String email;
     String phone;
 
-    @OneToMany(mappedBy = "customer")
-    private List<AccountEntity> account;
+//    @OneToMany(mappedBy = "customer")
+//    private List<AccountEntity> account;
 }

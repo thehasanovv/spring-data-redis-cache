@@ -22,7 +22,7 @@ public class CustomerController {
         return ResponseEntity.status(HttpStatus.OK).body(createdCustomer);
     }
 
-    @PatchMapping("/update/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<CustomerResponseDto> updateCustomer(@PathVariable Long id, @RequestBody CustomerRequestDto customerDto) {
         CustomerResponseDto updateCustomer = customerService.updateCustomer(id, customerDto);
         return ResponseEntity.status(HttpStatus.OK).body(updateCustomer);

@@ -29,7 +29,7 @@ public class AccountEntity {
     String email;
     String phone;
 
-    @ManyToOne(fetch = EAGER)
-    @JoinColumn(name = "customer_id")
-    private CustomerEntity customer;
+//    @ManyToOne(fetch = EAGER)
+//    @JoinColumn(name = "customer_id")
+//    private CustomerEntity customer;
 }
