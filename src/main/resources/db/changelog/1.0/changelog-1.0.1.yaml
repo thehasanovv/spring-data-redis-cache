@@ -34,12 +34,12 @@ databaseChangeLog:
               - column:
                   name: phone
                   type: varchar(32)
-              - column:
-                  name: customer_id
-                  type: bigint
-                  constraints:
-                    foreignKeyName: fk_account_to_customer
-                    references: customers(id)
-                    nullable: false
+#              - column:
+#                  name: customer_id
+#                  type: bigint
+#                  constraints:
+#                    foreignKeyName: fk_account_to_customer
+#                    references: customers(id)
+#                    nullable: false
 
             remarks: Table to store information about account
